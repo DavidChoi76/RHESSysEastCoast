@@ -165,6 +165,11 @@ void zone_daily_I(
 
 	double unifdist(double, double);
 
+	double compute_saturation_vapor_pressure(double temperature);
+
+	double compute_vapor_pressure_deficit(double saturation_vapor_pressure,
+		double dewpoint_vapor_pressure);
+
 	long  julday(struct date);	
 	/*--------------------------------------------------------------*/
 	/*  Local variable definition.                                  */

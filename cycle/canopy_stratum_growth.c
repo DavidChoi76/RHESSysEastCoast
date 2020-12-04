@@ -42,21 +42,18 @@ void	canopy_stratum_growth(
 	int	compute_growth_resp(	 int,
 		struct epconst_struct,
 		struct cdayflux_struct *);
-	int 	update_C_stratum_daily(
+	int update_C_stratum_daily(
 		struct epconst_struct,
 		struct cstate_struct *,
 		struct cdayflux_struct *,
         struct soil_c_object *,
-        struct canopy_strata_object *stratum
-        );
-    
-	int 	update_N_stratum_daily(
+        struct canopy_strata_object *stratum );
+	int update_N_stratum_daily(
 		struct epconst_struct,
 		struct nstate_struct *,
 		struct ndayflux_struct *,
 		struct soil_n_object *,
-        struct canopy_strata_objects *stratum
-        );
+        struct canopy_strata_objects *stratum );
     
 	int	allocate_daily_growth(
 		int,
@@ -75,6 +72,7 @@ void	canopy_stratum_growth(
         struct patch_object *patch,
         struct canopy_strata_object *stratum,
         struct command_line_object *command_line);
+
 	int	allocate_annual_growth(
 		int,
 		int,
@@ -95,6 +93,12 @@ void	canopy_stratum_growth(
         struct patch_object *patch,
         struct canopy_strata_object *stratum,
 		struct	command_line_object *);
+
+	double		compute_prop_alloc_daily(
+		double,
+		struct cstate_struct *,
+		struct epconst_struct);
+	
 
 	/*--------------------------------------------------------------*/
 	/*  Local variable definition.                                  */
