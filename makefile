@@ -1,5 +1,5 @@
-PGM  = rhessysEC.7.2
-VERSION = 7.2.0.EC
+PGM  = rhessysec.7.2.0
+VERSION = 7.2.0
 CC = gcc 
 CFLAGS =-Wall -g -std=c99
 RHESSYS_BIN = /usr/local/bin
