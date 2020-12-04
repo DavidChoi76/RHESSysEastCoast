@@ -126,13 +126,13 @@ void	basin_daily_F(
 	/*  For routing option - route water between patches within     */
 	/*      the basin:  this part has been moved to basin_hourly    */
 	/*--------------------------------------------------------------*/
-   	if ( command_line[0].routing_flag == 1 && zone[0].hourly_rain_flag == 0) {
+/*   	if ( command_line[0].routing_flag == 1 && zone[0].hourly_rain_flag == 0) {
 		compute_subsurface_routing(command_line,
 			basin,
 			basin[0].defaults[0][0].n_routing_timesteps,
 			current_date);
 	}
-	
+*/	
 	/*--------------------------------------------------------------*/
 	/*  For stream routing option - route water between patches within     */
 	/*      the basin                                               */
