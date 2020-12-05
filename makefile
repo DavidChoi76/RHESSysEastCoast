@@ -1,4 +1,4 @@
-PGM  = rhessysec
+PGM  = rhessysecv7.2.0
 VERSION = 7.2.0
 CC = gcc 
 CFLAGS =-Wall -g -std=c99
